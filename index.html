@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="assets/stylesheets/main.css">
+	<title>Pixel-paint</title>
+</head>
+
+<body>
+
+	<header>
+		<h1>Hello!<br>Welcome to the Pixel-paint.</h1>
+		<section class="grid-select">
+			<label>
+				Select grid size:
+				<select id="grid-size" name="grid-size">
+					<option value="16" selected>16x16</option>
+					<option value="32">32x32</option>
+					<option value="64">64x64</option>
+					<option value="128">128x128</option>
+				</select>
+			</label>
+		</section>
+	</header>
+	
+	<main>
+        <div class="row center">           
+			<table class="grid-field" ondragstart="return false;" ondrop="return false;">
+			</table>
+            
+            <div class="tools">
+            	<button class="btn btn-colorless" id="new-list">
+            		<img src="assets/images/new-list.png">
+            	</button>
+            	
+            	<button class="btn btn-toggle-on" id="grid-toggler">
+            		<img src="assets/images/grid-toggle.png">
+            	</button>
+            	
+            	<button class="btn" id="eraser-toggler" title="Press 'E' for toggle">
+  					<img src="assets/images/eraser.png">
+				</button>
+          		
+           		<button class="btn btn-colorless" id="color-picker-trigger">
+           			<img src="assets/images/colorPicker.png">
+				</button>	
+				   
+           		<input id="color-picker" type="color"> <!-- Relate to button .colorPickerTrigger-->
+            </div>
+            
+        </div>
+	</main>
+
+	<script src="assets/javascript/application.js"></script>
+</body>
+</html>
